@@ -10,8 +10,10 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerSelection === computerSelection) {
        return "It's a draw!";
+    } else if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock") {
+        return `You Win! ${playerSelection} beats ${computerSelection}!`;
     } else {
-        return playerSelection;
+        return "You lose";
     }
 
 }
