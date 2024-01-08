@@ -1,0 +1,1 @@
+In this project I'm creating a rock, paper, scissors game project as instructed by The Odin Project Foundations Course.
