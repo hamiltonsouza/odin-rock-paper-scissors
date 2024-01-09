@@ -6,25 +6,19 @@ function getComputerChoice() {
 
 }
 
-function getPlayerChoice() {
-
-    const playerSelection = prompt("Choose rock, paper or scissors!");
-    return playerSelection.toLowerCase();
-
-}
-
 function playRound(playerSelection, computerSelection) {
 
     if (playerSelection === computerSelection) {
-       return "It's a Draw!";
+       return "It's a draw!";
     } else if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock") {
-        return `You Win! ${playerSelection[0].toUpperCase() + playerSelection.substring(1)} beats ${computerSelection}!`;
+        return `You Win! ${playerSelection} beats ${computerSelection}!`;
     } else {
-        return `You Lose! ${computerSelection[0].toUpperCase() + computerSelection.substring(1)} beats ${playerSelection}!`;
+        return "You lose";
     }
 
 }
 
-const playerSelection = getPlayerChoice();
+const playerSelection = "rock";
 const computerSelection = getComputerChoice();
+console.log(computerSelection);
 console.log(playRound(playerSelection, computerSelection));
