@@ -37,11 +37,11 @@ function resetScore() {
 
 function finalWinner() {
     if (playerScore === 5) {
-        winnerDivDislay.textContent = `Congratulations! You've won the game! ${playerScore} to ${computerScore}`;
+        winnerDivDislay.textContent = `Congratulations! You've won the game! The final score is ${playerScore} to ${computerScore}!`;
         resetScore();
     }
     if (computerScore === 5) {
-        winnerDivDislay.textContent = `Too bad! You lost to the computer ${computerScore} to ${playerScore}`;
+        winnerDivDislay.textContent = `Too bad! You lost to the computer! The final score is ${computerScore} to ${playerScore}!`;
         resetScore();
     }
     else {
